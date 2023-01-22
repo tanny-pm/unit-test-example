@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "unit-test-example"
+version = "0.1.0"
+description = ""
+authors = ["Tanny <ryosuke.tanimura+dev@gmail.com>"]
+readme = "README.md"
+packages = [{include = "unit_test_example"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.0.0"
+mypy = "^0.991"
+pytest = "^7.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
